@@ -189,7 +189,7 @@ def create_payslip_pdf(row, month_name, year, out_pdf_path, logo_svg_code):
     c.setFillColor(PAYSLIP_REGULAR_COLOR)
     c.setFont("Helvetica", 18)
     c.drawString(left_margin + text_width_payslip, y_pos, f" {month_name.upper()} {year}")
-    y_pos -= 5 * mm
+    y_pos -= 10 * mm
 
     # Company name and address
     c.setFillColor(TEXT_COLOR)
