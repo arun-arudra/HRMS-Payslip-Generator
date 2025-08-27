@@ -18,16 +18,16 @@ This tool is useful for small businesses or teams who want to automate payslip g
 ---
 
 ## 📂 Project Structure
-hrms-payslip/
-├── employees.xlsx # Employee database (auto-created if missing)
-├── logo.svg       # Your company logo (replace with your own)
-├── payslips/      # Generated PDF payslips
-├── hrms.py        # Main script
-├── config.py      # Configuration file for company details and email settings
-├── install.py     # Installation script for dependencies
-├── .payslip_sent_log.json # Log of sent payslips
-├── README.md      # Project documentation
-├── LICENSE        # GNU GPL license
+hrms-payslip\
+├── employees.xlsx # Employee database (auto-created if missing)\
+├── logo.svg       # Your company logo (replace with your own)\
+├── payslips/      # Generated PDF payslips\
+├── hrms.py        # Main script\
+├── config.py      # Configuration file for company details and email settings\
+├── install.py     # Installation script for dependencies\
+├── .payslip_sent_log.json # Log of sent payslips\
+├── README.md      # Project documentation\
+├── LICENSE        # GNU GPL license\
 └── requirements.txt # Python dependencies
 
 ---
@@ -40,3 +40,32 @@ Run the installation script to check for and install all required Python librari
 
 ```bash
 python install.py
+```
+This command will automatically install dependencies from ```requirements.txt``` and then run the main script.
+
+### 2. Prepare Employee Data
+The script will automatically create a template file named ```employees.xlsx``` in the project directory if it's missing.
+
+Open this file and fill in your employee details, making sure to use the exact column headers provided in the template.
+
+### 3. Customize Your Branding & Email
+Open ```config.py``` to change the company name, address, and email settings.
+
+Logo: Replace the ```logo.svg``` file in the main directory with your own company logo. The script will automatically use this file for the PDF.
+
+
+## 📜 License
+This project is licensed under the GNU General Public License (GPL v3). You are free to use, modify, and distribute it under the same license terms.
+
+## 🤝 Contribution
+Contributions are welcome! If you'd like to improve this project, please follow these steps:
+
+Fork the repository.
+
+Create a feature branch (```git checkout -b feature-name```).
+
+Commit your changes (```git commit -m 'Add new feature'```).
+
+Push to the branch (```git push origin feature-name```).
+
+Open a Pull Request.
